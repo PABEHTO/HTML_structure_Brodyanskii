@@ -20,23 +20,25 @@
           </tr>
           <tr>
             <td>
-              <label><input type="radio" value="0" name="name">Длина</label>
+              <label><input type="radio" value="0" name="name">Страна истока</label>
             </td>
             <td>
-              <label><input type="checkbox">Максимальный расход воды</label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label><input type="radio" value="1" name="name">Континент</label>
-            </td>
-            <td>
-              <label><input type="checkbox">Минимальная расход воды</label>
+              <label><input type="checkbox">Средняя длина</label>
             </td>
           </tr>
           <tr>
             <td>
-              <label><input type="radio" value="2" name="name">Скорость течения</label>
+              <label
+                ><input type="radio" value="1" name="name">Континент</label
+              >
+            </td>
+            <td>
+              <label><input type="checkbox">Средняя ширина</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+               
             </td>
             <td>
               <label><input type="checkbox">Количество рек</label>
@@ -80,7 +82,14 @@
             >Первый уровень:
             <select name="1stLvl">
               <option value="0" selected>Нет</option>
-              <option value="1">Да</option>
+              <option value="1">Наименование</option>
+              <option value="2">Длина</option>
+              <option value="3">Ширина</option>
+              <option value="4">Максимальная глубина</option>
+              <option value="5">Расход</option>
+              <option value="6">Скорость течения</option>
+              <option value="7">Континент</option>
+              <option value="8">Страна истока</option>
             </select>
           </label>
           <label>
@@ -93,7 +102,14 @@
             >Второй уровень:
             <select name="2ndLvl">
               <option value="0" selected>Нет</option>
-              <option value="1">Да</option>
+              <option value="1">Наименование</option>
+              <option value="2">Длина</option>
+              <option value="3">Ширина</option>
+              <option value="4">Максимальная глубина</option>
+              <option value="5">Расход</option>
+              <option value="6">Скорость течения</option>
+              <option value="7">Континент</option>
+              <option value="8">Страна истока</option>
             </select>
           </label>
           <label>
@@ -106,7 +122,14 @@
             >Третий уровень:
             <select name="3dLvl">
               <option value="0" selected>Нет</option>
-              <option value="1">Да</option>
+              <option value="1">Наименование</option>
+              <option value="2">Длина</option>
+              <option value="3">Ширина</option>
+              <option value="4">Максимальная глубина</option>
+              <option value="5">Расход</option>
+              <option value="6">Скорость течения</option>
+              <option value="7">Континент</option>
+              <option value="8">Страна истока</option>
             </select>
           </label>
           <label>
@@ -124,248 +147,225 @@
       <thead>
         <tr>
           <th>Название</th>
-          <th>Длина, км</th>
-          <th>Ширина, м</th>
-          <th>Максимальная глубина, м</th>
-          <th>Расход воды, м³/с</th>
-          <th>Скорость течения, км/ч</th>
+          <th>Длина (км)</th>
+          <th>Ширина (м)</th>
+          <th>Максимальная глубина (м)</th>
+          <th>Расход воды (м³/с)</th>
+          <th>Скорость течения (м/с)</th>
           <th>Континент</th>
+          <th>Страна истока</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Амазонка</td>
-          <td>7050</td>
-          <td>2400</td>
+          <td>6992</td>
+          <td>15000</td>
           <td>100</td>
           <td>209000</td>
-          <td>7.2</td>
+          <td>2.5</td>
           <td>Южная Америка</td>
+          <td>Перу</td>
         </tr>
         <tr>
           <td>Нил</td>
           <td>6650</td>
-          <td>2600</td>
-          <td>60</td>
           <td>2800</td>
-          <td>5.0</td>
+          <td>10</td>
+          <td>2830</td>
+          <td>2.1</td>
           <td>Африка</td>
+          <td>Уганда</td>
         </tr>
         <tr>
           <td>Янцзы</td>
           <td>6300</td>
-          <td>1500</td>
+          <td>13000</td>
           <td>90</td>
           <td>31900</td>
-          <td>6.0</td>
+          <td>2.7</td>
           <td>Евразия</td>
+          <td>Китай</td>
         </tr>
         <tr>
           <td>Миссисипи</td>
           <td>6275</td>
-          <td>3700</td>
+          <td>3500</td>
           <td>61</td>
           <td>16200</td>
-          <td>3.6</td>
+          <td>1.8</td>
           <td>Северная Америка</td>
+          <td>США</td>
+        </tr>
+        <tr>
+          <td>Енисей</td>
+          <td>5539</td>
+          <td>7000</td>
+          <td>24</td>
+          <td>19800</td>
+          <td>2.3</td>
+          <td>Евразия</td>
+          <td>Россия</td>
         </tr>
         <tr>
           <td>Хуанхэ</td>
           <td>5464</td>
           <td>2000</td>
           <td>50</td>
-          <td>2580</td>
-          <td>4.8</td>
+          <td>2650</td>
+          <td>2.6</td>
           <td>Евразия</td>
-        </tr>
-        <tr>
-          <td>Обь</td>
-          <td>5410</td>
-          <td>2500</td>
-          <td>50</td>
-          <td>12800</td>
-          <td>5.2</td>
-          <td>Евразия</td>
-        </tr>
-        <tr>
-          <td>Парана</td>
-          <td>4880</td>
-          <td>3500</td>
-          <td>65</td>
-          <td>16800</td>
-          <td>4.2</td>
-          <td>Южная Америка</td>
+          <td>Китай</td>
         </tr>
         <tr>
           <td>Конго</td>
           <td>4700</td>
-          <td>2500</td>
+          <td>7000</td>
           <td>220</td>
           <td>41000</td>
-          <td>4.0</td>
+          <td>3.8</td>
           <td>Африка</td>
+          <td>Демократическая Республика Конго</td>
         </tr>
         <tr>
           <td>Амур</td>
           <td>4444</td>
-          <td>3000</td>
-          <td>40</td>
-          <td>11000</td>
-          <td>3.8</td>
+          <td>8000</td>
+          <td>15</td>
+          <td>10800</td>
+          <td>1.5</td>
           <td>Евразия</td>
+          <td>Россия</td>
         </tr>
         <tr>
           <td>Лена</td>
           <td>4400</td>
-          <td>2100</td>
-          <td>40</td>
-          <td>16900</td>
-          <td>4.5</td>
+          <td>7000</td>
+          <td>21</td>
+          <td>17000</td>
+          <td>2.4</td>
           <td>Евразия</td>
+          <td>Россия</td>
         </tr>
         <tr>
           <td>Меконг</td>
           <td>4350</td>
-          <td>2400</td>
-          <td>50</td>
+          <td>12000</td>
+          <td>100</td>
           <td>16000</td>
-          <td>4.2</td>
+          <td>3.0</td>
           <td>Евразия</td>
+          <td>Китай</td>
         </tr>
         <tr>
           <td>Маккензи</td>
           <td>4241</td>
-          <td>1500</td>
-          <td>65</td>
-          <td>10200</td>
-          <td>3.4</td>
+          <td>6000</td>
+          <td>15</td>
+          <td>9700</td>
+          <td>2.2</td>
           <td>Северная Америка</td>
+          <td>Канада</td>
         </tr>
         <tr>
           <td>Нигер</td>
-          <td>4184</td>
-          <td>1600</td>
-          <td>35</td>
-          <td>6100</td>
-          <td>4.0</td>
+          <td>4180</td>
+          <td>5000</td>
+          <td>20</td>
+          <td>8200</td>
+          <td>1.9</td>
           <td>Африка</td>
+          <td>Гвинея</td>
         </tr>
         <tr>
-          <td>Муррей</td>
-          <td>3750</td>
-          <td>1200</td>
-          <td>40</td>
-          <td>7670</td>
-          <td>2.8</td>
-          <td>Австралия</td>
+          <td>Брахмапутра</td>
+          <td>3848</td>
+          <td>8000</td>
+          <td>30</td>
+          <td>19000</td>
+          <td>3.2</td>
+          <td>Евразия</td>
+          <td>Китай</td>
         </tr>
         <tr>
-          <td>Токантинс</td>
+          <td>Обь</td>
           <td>3650</td>
-          <td>2000</td>
-          <td>50</td>
-          <td>13000</td>
-          <td>3.7</td>
+          <td>7000</td>
+          <td>20</td>
+          <td>12800</td>
+          <td>2.4</td>
+          <td>Евразия</td>
+          <td>Россия</td>
+        </tr>
+        <tr>
+          <td>Парана</td>
+          <td>4700</td>
+          <td>8000</td>
+          <td>40</td>
+          <td>18000</td>
+          <td>3.5</td>
           <td>Южная Америка</td>
+          <td>Бразилия</td>
         </tr>
         <tr>
           <td>Волга</td>
           <td>3530</td>
-          <td>3700</td>
-          <td>45</td>
+          <td>1500</td>
+          <td>31</td>
           <td>8060</td>
-          <td>4.1</td>
+          <td>2.1</td>
           <td>Евразия</td>
+          <td>Россия</td>
         </tr>
         <tr>
-          <td>Енисей</td>
-          <td>3487</td>
-          <td>3500</td>
-          <td>80</td>
-          <td>19900</td>
-          <td>3.6</td>
+          <td>Индигирка</td>
+          <td>1726</td>
+          <td>700</td>
+          <td>30</td>
+          <td>3200</td>
+          <td>1.7</td>
           <td>Евразия</td>
+          <td>Россия</td>
+        </tr>
+        <tr>
+          <td>Шаннон</td>
+          <td>386</td>
+          <td>500</td>
+          <td>20</td>
+          <td>200</td>
+          <td>1.2</td>
+          <td>Евразия</td>
+          <td>Ирландия</td>
+        </tr>
+        <tr>
+          <td>Темза</td>
+          <td>346</td>
+          <td>300</td>
+          <td>15</td>
+          <td>66</td>
+          <td>0.8</td>
+          <td>Евразия</td>
+          <td>Великобритания</td>
+        </tr>
+        <tr>
+          <td>Тигр</td>
+          <td>1850</td>
+          <td>1500</td>
+          <td>40</td>
+          <td>1000</td>
+          <td>2.0</td>
+          <td>Евразия</td>
+          <td>Турция</td>
         </tr>
         <tr>
           <td>Ганг</td>
-          <td>3460</td>
-          <td>2500</td>
-          <td>40</td>
-          <td>16490</td>
-          <td>4.5</td>
-          <td>Евразия</td>
-        </tr>
-        <tr>
-          <td>Сан-Франциско</td>
-          <td>3400</td>
-          <td>2200</td>
-          <td>60</td>
-          <td>2870</td>
-          <td>4.2</td>
-          <td>Южная Америка</td>
-        </tr>
-        <tr>
-          <td>Колорадо</td>
-          <td>2333</td>
-          <td>1000</td>
-          <td>30</td>
-          <td>850</td>
-          <td>2.5</td>
-          <td>Северная Америка</td>
-        </tr>
-        <tr>
-          <td>Дунай</td>
-          <td>2860</td>
-          <td>1500</td>
-          <td>40</td>
-          <td>6500</td>
-          <td>3.1</td>
-          <td>Евразия</td>
-        </tr>
-        <tr>
-          <td>Висла</td>
-          <td>1047</td>
-          <td>1200</td>
-          <td>30</td>
-          <td>1080</td>
-          <td>1.5</td>
-          <td>Евразия</td>
-        </tr>
-        <tr>
-          <td>Сенегал</td>
-          <td>1790</td>
-          <td>1100</td>
-          <td>25</td>
-          <td>693</td>
+          <td>2704</td>
+          <td>10000</td>
+          <td>20</td>
+          <td>16000</td>
           <td>2.8</td>
-          <td>Африка</td>
-        </tr>
-        <tr>
-          <td>Замбези</td>
-          <td>2574</td>
-          <td>2100</td>
-          <td>50</td>
-          <td>3270</td>
-          <td>3.9</td>
-          <td>Африка</td>
-        </tr>
-        <tr>
-          <td>Урал</td>
-          <td>2428</td>
-          <td>1700</td>
-          <td>30</td>
-          <td>400</td>
-          <td>2.2</td>
           <td>Евразия</td>
-        </tr>
-        <tr>
-          <td>Рейн</td>
-          <td>1233</td>
-          <td>1300</td>
-          <td>28</td>
-          <td>2900</td>
-          <td>2.9</td>
-          <td>Евразия</td>
+          <td>Индия</td>
         </tr>
         <tr>
           <td>Окаванго</td>
@@ -375,6 +375,7 @@
           <td>475</td>
           <td>1.8</td>
           <td>Африка</td>
+          <td>Ангола</td>
         </tr>
         <tr>
           <td>Днепр</td>
@@ -384,69 +385,37 @@
           <td>1670</td>
           <td>3.2</td>
           <td>Евразия</td>
+          <td>Россия</td>
         </tr>
         <tr>
-          <td>Колумбия</td>
-          <td>2000</td>
-          <td>900</td>
-          <td>40</td>
-          <td>7420</td>
-          <td>4.0</td>
-          <td>Северная Америка</td>
-        </tr>
-        <tr>
-          <td>Тахо</td>
-          <td>1038</td>
-          <td>500</td>
-          <td>50</td>
-          <td>300</td>
-          <td>1.9</td>
+          <td>Рейн</td>
+          <td>1233</td>
+          <td>1500</td>
+          <td>20</td>
+          <td>2500</td>
+          <td>2.9</td>
           <td>Евразия</td>
+          <td>Швейцария</td>
         </tr>
         <tr>
           <td>Ориноко</td>
-          <td>2140</td>
-          <td>1300</td>
-          <td>100</td>
+          <td>2740</td>
+          <td>15000</td>
+          <td>80</td>
           <td>33000</td>
-          <td>6.5</td>
+          <td>3.9</td>
           <td>Южная Америка</td>
-        </tr>
-        <tr>
-          <td>Рона</td>
-          <td>813</td>
-          <td>500</td>
-          <td>20</td>
-          <td>1700</td>
-          <td>3.0</td>
-          <td>Евразия</td>
+          <td>Венесуэла</td>
         </tr>
         <tr>
           <td>Тибр</td>
           <td>405</td>
-          <td>450</td>
-          <td>20</td>
+          <td>300</td>
+          <td>15</td>
           <td>230</td>
-          <td>1.5</td>
+          <td>2.0</td>
           <td>Евразия</td>
-        </tr>
-        <tr>
-          <td>Иравади</td>
-          <td>2170</td>
-          <td>1400</td>
-          <td>30</td>
-          <td>13000</td>
-          <td>5.5</td>
-          <td>Евразия</td>
-        </tr>
-        <tr>
-          <td>Риу-Гранде</td>
-          <td>3034</td>
-          <td>1500</td>
-          <td>20</td>
-          <td>240</td>
-          <td>1.6</td>
-          <td>Северная Америка</td>
+          <td>Италия</td>
         </tr>
         <tr>
           <td>Салвен</td>
@@ -456,6 +425,7 @@
           <td>16000</td>
           <td>3.6</td>
           <td>Евразия</td>
+          <td>Китай</td>
         </tr>
         <tr>
           <td>Рио-Негро</td>
@@ -465,6 +435,7 @@
           <td>29000</td>
           <td>4.2</td>
           <td>Южная Америка</td>
+          <td>Колумбия</td>
         </tr>
         <tr>
           <td>Шеллефтельвен</td>
@@ -474,6 +445,7 @@
           <td>230</td>
           <td>1.8</td>
           <td>Евразия</td>
+          <td>Швеция</td>
         </tr>
         <tr>
           <td>Фразер</td>
@@ -483,6 +455,7 @@
           <td>3550</td>
           <td>3.4</td>
           <td>Северная Америка</td>
+          <td>Канада</td>
         </tr>
         <tr>
           <td>Годзавари</td>
@@ -492,6 +465,7 @@
           <td>3800</td>
           <td>4.1</td>
           <td>Евразия</td>
+          <td>Индия</td>
         </tr>
         <tr>
           <td>Саскачеван</td>
@@ -501,6 +475,7 @@
           <td>1200</td>
           <td>3.2</td>
           <td>Северная Америка</td>
+          <td>Канада</td>
         </tr>
         <tr>
           <td>Тарим</td>
@@ -510,6 +485,7 @@
           <td>258</td>
           <td>1.7</td>
           <td>Евразия</td>
+          <td>Китай</td>
         </tr>
         <tr>
           <td>Юкон</td>
@@ -519,6 +495,7 @@
           <td>6000</td>
           <td>3.1</td>
           <td>Северная Америка</td>
+          <td>Канада</td>
         </tr>
         <tr>
           <td>Драва</td>
@@ -528,6 +505,7 @@
           <td>670</td>
           <td>2.5</td>
           <td>Евразия</td>
+          <td>Италия</td>
         </tr>
         <tr>
           <td>Шатт-эль-Араб</td>
@@ -537,6 +515,7 @@
           <td>4100</td>
           <td>4.8</td>
           <td>Евразия</td>
+          <td>Турция</td>
         </tr>
         <tr>
           <td>Риу-Токантинс</td>
@@ -546,6 +525,7 @@
           <td>8000</td>
           <td>3.7</td>
           <td>Южная Америка</td>
+          <td>Бразилия</td>
         </tr>
         <tr>
           <td>Теслин</td>
@@ -555,6 +535,7 @@
           <td>490</td>
           <td>2.3</td>
           <td>Северная Америка</td>
+          <td>Канада</td>
         </tr>
         <tr>
           <td>Печора</td>
@@ -564,6 +545,7 @@
           <td>4300</td>
           <td>2.9</td>
           <td>Евразия</td>
+          <td>Россия</td>
         </tr>
         <tr>
           <td>Пилкомайо</td>
@@ -573,6 +555,7 @@
           <td>550</td>
           <td>2.7</td>
           <td>Южная Америка</td>
+          <td>Боливия</td>
         </tr>
         <tr>
           <td>Хари-Руд</td>
@@ -582,6 +565,7 @@
           <td>300</td>
           <td>1.9</td>
           <td>Евразия</td>
+          <td>Афганистан</td>
         </tr>
       </tbody>
     </table>
