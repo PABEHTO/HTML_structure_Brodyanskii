@@ -1,0 +1,95 @@
+.main {
+    border: solid thin black;
+}
+
+.top {
+    text-align: center;
+    background-image: url("img/top_Menu_2.jpg");
+    overflow: hidden;
+    font-size: 2vw;
+}
+.top p {
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+.top a {
+    padding-left:3%;
+    padding-right:3%;
+    text-decoration: none;
+    color: black;
+}
+.top .highlight {
+    background-color: rgba(7,19,7,0.2);
+}
+.down {
+    overflow: hidden;
+    margin: 2% 4%
+}
+.left {
+    display: block;
+    width: 49%;
+    float: left;
+    overflow: hidden;
+    clear:both;
+    font-size: 1.5vw;
+
+}
+.right {
+    width: 49%;
+    float: right;
+    overflow: hidden;
+    font-size: 1vw;
+}
+
+.left-pic {
+    width: 49%;
+    height: 500px;
+    display: inline;/*was inline-block*/
+    vertical-align: top;
+    float: left;
+}
+.left-txt {
+    width: 49%;
+    display: inline;/*was inline-block*/
+    float: right;
+    vertical-align:top;
+}
+
+footer {
+    border-left: solid thin black;
+    border-right: solid thin black;
+    border-bottom: solid thin black;
+    padding: 1%;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 2vw;
+}
+footer div {
+    display: inline-block;
+
+}
+.footer-right {
+    float: right;
+}
+
+.right-block {
+    border: solid thin grey ;
+    display: block;
+    overflow: hidden;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.right-block-inner {
+    overflow: hidden;
+}
+.right-block-pic {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.right-block-header {
+    width: 49%;
+    display: inline-block;
+    vertical-align:top;
+    padding-left: 4%;
+}
