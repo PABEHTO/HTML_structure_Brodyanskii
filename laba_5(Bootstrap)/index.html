@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Лабораторная работа Bootstrap</title>
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="CSS/styles.css">
+ <script src="js/bootstrap.bundle.min.js"></script>
+ </head>
+<body class="m-4 border border-secondary">
+
+ <header>
+  <a class="navbar-brand d-flex justify-content-center my-3 fs-3" href="#">Реки мира</a>
+
+  <nav class="navbar navbar-expand-md bg-light navbar-light">
+
+    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav mx-auto d-flex align-items-center mt-3 mt-md-0">
+    <li class="nav-item">
+    <a class="nav-link active d-inline-block bg-secondary bg-opacity-25" href="#">Реки мира</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">Список рек мира</a>
+    </li>
+    </ul>
+    
+    </div>
+   
+   </nav>
+
+
+  <!-- Галерея -->
+ <div class="border-bottom border-3 pb-3 mx-0 row gy-3 text-center carousel slide carousel-dark" data-bs-ride="carousel" id="gallery">
+  <div class="carousel-inner">
+  <div class="col-lg-2 col-md-4 col-6 carousel-item active">
+  <img src="img/Amazonas1.jpg" class="img-fluid img-thumbnail img-block mx-auto" alt="">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 carousel-item">
+  <img src="img/Lena1.jpg" class="img-fluid img-thumbnail img-block mx-auto" alt="">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 carousel-item">
+  <img src="img/Dniepr1.jpg" class="img-fluid img-thumbnail img-block mx-auto" alt="">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 carousel-item">
+  <img src="img/Niger1.jpg" class="img-fluid img-thumbnail img-block mx-auto" alt="">
+  </div>
+  <div class="col-lg-2 col-md-4 col-6 carousel-item">
+  <img src="img/Nil1.jpg" class="img-fluid img-thumbnail img-block mx-auto" alt="">
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+ </div>
+  
+
+ </header>
+ 
+ 
+ <main class="row mx-0 px-5 py-3">
+  <div class="container col-md-6 col-12">
+    <div class="row">
+      <img src="img/Amazonas.jpg" class="col-6" alt="">
+      <div class="col-6">
+        <h5>Амазонка, Южная Америка</h5>
+        <p class="">Амазо́нка (исп. и порт. Amazonas) — крупнейшая река на Земле по
+          длине, площади бассейна и полноводности. Протекает по Южной Америке.
+          Длина Амазонки является в научном сообществе дискуссионным вопросом
+          и по различным измерениям составляет: от истока реки Мараньон —
+          около 6400 км, от истока реки Апачет — 6992 км, от истока Укаяли —
+          около 7100 км. Амазонка со своим длиннейшим истоком претендует,
+          вместе с Нилом, на статус самого длинного водотока в мире.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-md-6 col-12">
+    <div class="row border border-secondary mb-3 p-3 ms-0 mt-3 mt-md-0">
+      <div class="row">
+        <img src="img/Lena1.jpg" class="col-6 " alt="">
+        <h5 class="col-6 d-flex align-items-center justify-content-start">Лена, Евразия</h5>
+        <p class="col-12">Ле́на — река в России, в Восточной Сибири, впадает в море Лаптевых
+          Северного Ледовитого океана, образуя крупнейшую в Арктике дельту.
+          Длина вместе с дельтой — 4400 км. В некоторых случаях указывается
+          длина 4294 км без учёта Быковской протоки (106 км) в дельте Лены.
+          Площадь бассейна — 2,49 млн км². Среднемноголетний сток равен
+          530,225 км³/год.</p>
+      </div>
+    </div>
+
+    <div class="row border border-secondary p-3 mb-3 ms-0">
+      <div class="row ">
+        <img src="img/Dniepr1.jpg" class="col-6 " alt="">
+        <h5 class="col-6 d-flex align-items-center justify-content-start">Днепр, Евразия</h5>
+        <p class="col-12">Днепр — четвёртая по длине река Европы после Волги, Дуная и Урала,
+          имеет самое длинное русло в границах Украины. Длина Днепра от
+          истока до устья в естественном состоянии составляла 2285 (2139)
+          км, теперь, когда во многих местах выпрямили фарватер — 2201 км.
+          Площадь водосборного бассейна — 504 000 км², из них в пределах
+          Украины — 291 400 км². Средний расход воды в устье — 1670 м³/с.</p>
+      </div>
+    </div>
+
+    <div class="row border border-secondary p-3 mb-3 ms-0">
+      <div class="row">
+        <img src="img/Niger1.jpg" class="col-6 " alt="">
+        <h5 class="col-6 d-flex align-items-center justify-content-start">Нигер, Африка</h5>
+        <p class="col-12">Ни́гер — важнейшая река в Западной Африке. Длина 4180 км, площадь
+          бассейна 2 117 700 км², третья по этим параметрам в Африке после
+          Нила и Конго. Исток реки находится на склонах Леоно-Либерийской
+          возвышенности на юго-востоке Гвинеи. Река течёт по территории
+          Мали, Нигера, по границе с Бенином, а затем по территории Нигерии.
+          Впадает в Гвинейский залив Атлантического океана, формируя в
+          районе впадения дельту. Крупнейший приток Нигера — река Бенуэ.</p>
+      </div>
+    </div>
+
+    <div class="row border border-secondary p-3 ms-0">
+      <div class="row">
+        <img src="img/Nil1.jpg" class="col-6 " alt="">
+        <h5 class="col-6 d-flex align-items-center justify-content-start">Нил, Африка</h5>
+        <p class="col-12">Нил — крупнейшая по протяжённости река в Африке, одна из
+          величайших по протяжённости речных систем в мире. Река берёт
+          начало на Восточно-Африканском плоскогорье и впадает в Средиземное
+          море, образуя дельту площадью 24 тыс. км². Среднегодовой расход
+          воды в устье Нила 2900 м³/с. В верхнем течении принимает крупные
+          притоки — Эль-Газаль (левый) и Асуа, Собат, Голубой Нил и Атбара
+          (правые). Ниже устья правого притока Атбары Нил течёт по
+          полупустыне, не имея притоков (кроме временных рек) на протяжении
+          последних 3000 км.</p>
+      </div>
+    </div>
+
+  </div>
+  
+  
+
+ </main>
+ <footer class="border-top border-secondary d-flex justify-content-between"> 
+  <div class=""> 
+    Бродянский В.О. Б9122-09.03.04(5)
+  </div> 
+  <div class=""> 
+    @Контакты
+  </div> 
+</footer>
+
+</body>
+</html>
